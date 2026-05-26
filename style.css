@@ -1,85 +1,73 @@
-/* Base CSS */
-
-* {
-  box-sizing: border-box;
-}
-
 body {
-  margin: 0;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: #e5e5e5;
   color: #222;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 0;
 }
-
-img {
-  max-width: 100%;
-}
-
-a {
-  text-decoration: none;
-}
-
-/* Your CSS */
 
 .siteheader {
-  padding: 10px;
+  padding: 1rem;
 }
 
 .siteheader h1 {
   margin: 0;
   font-size: 3rem;
-  font-weight: bold;
 }
 
 main {
-  padding: 0 5px 10px;
+  padding: 0 0.3rem 1rem;
 }
 
+/* GRID LAYOUT */
 .emojis {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 16px;
+  gap: 1rem;
 }
 
+/* CARD STYLING */
 .emoji {
-  background-color: #f3f3f3;
-  border: 1px solid #555;
-  border-radius: 10px;
-  padding: 16px;
+  border: 1px solid #222;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #f2f2f2;
+
+  /* FLEXBOX */
   display: flex;
   flex-direction: column;
-  min-height: 340px;
 }
 
-.icon {
+/* ORDER OF CONTENT */
+.emoji .icon {
   order: -1;
-  font-size: 4rem;
-  text-align: center;
-  margin-bottom: 10px;
+  align-self: center;
+  margin-bottom: 0.5rem;
 }
 
 .emoji h2 {
-  font-size: 1.2rem;
-  margin: 0 0 10px;
-  padding-bottom: 10px;
+  margin: 0;
   border-bottom: 2px solid #ccc;
+  padding-bottom: 0.5rem;
+  font-size: 1.2rem;
 }
 
 .emoji p {
   line-height: 1.3;
-  margin-bottom: 20px;
 }
 
 .emoji a {
-  margin-top: auto;
-  background-color: #7b35b5;
+  text-decoration: none;
+  background-color: #781BAA;
   color: white;
-  padding: 14px;
+  padding: 1rem;
   border-radius: 8px;
-  font-weight: bold;
-  display: block;
+  text-align: center;
+
+  /* Push button to bottom */
+  margin-top: auto;
 }
 
-.emoji a:hover {
-  background-color: #682c99;
+.icon {
+  font-size: 4rem;
 }
