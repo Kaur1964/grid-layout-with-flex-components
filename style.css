@@ -19,26 +19,22 @@ main {
   padding: 0 0.3rem 1rem;
 }
 
-/* GRID LAYOUT */
 .emojis {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 
-/* CARD STYLING */
 .emoji {
   border: 1px solid #222;
   border-radius: 8px;
   padding: 1rem;
   background-color: #f2f2f2;
 
-  /* FLEXBOX */
   display: flex;
   flex-direction: column;
 }
 
-/* ORDER OF CONTENT */
 .emoji .icon {
   order: -1;
   align-self: center;
@@ -64,7 +60,6 @@ main {
   border-radius: 8px;
   text-align: center;
 
-  /* Push button to bottom */
   margin-top: auto;
 }
 
